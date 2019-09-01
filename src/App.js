@@ -7,9 +7,13 @@ class App extends React.Component {
             return name;
         }
 
+        function addName (place, value) {
+            document.getElementById(place).innerHTML = value;
+        }
+
         return <div>
             <input id="username" type="text"/>
-            <div>Hello, {username.oninput(getName(username))}!</div>
+            <div id="welcome">Hello, {addName(welcome, getName(username))}!</div>
         </div>
     }
 }
