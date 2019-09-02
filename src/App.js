@@ -19,7 +19,7 @@ class App extends React.Component {
     render() {
         return <div>
             <input type="text" onChange={this.handleName}/>
-            <div>Привет, {this.state.value}!</div>
+	        <div>{(this.state.value.length > 1) ? (<div>Привет, {this.state.value}!</div>) : null}</div>
 	        <div>{this.ifVasya(this.state.value)}</div>
         </div>
     }
