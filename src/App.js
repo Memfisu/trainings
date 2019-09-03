@@ -1,24 +1,11 @@
 import React from 'react';
+import inputName from './inputName';
+import returnName from './returnName';
 
 class App extends React.Component {
-    state = {
-        value:"",
-    }
-    
-    handleName = (event) => {
-        this.setState({value: event.target.value});
-}
-
-	ifVasya = (name) => {
-    	let welcome = "";
-		(name.length<3) ? (welcome = "") : (
-	(name === "Вася") ? (welcome = "Пошёл нахуй!") : (welcome = "Добро пожаловать!"))
-	return welcome;
-}
-    
     render() {
         return <div>
-            <input type="text" onChange={this.handleName}/>
+            <input type="text" onChange={inputName.handleName}/>
 	        <div>{(this.state.value.length > 1) ? (<div>Привет, {this.state.value}!</div>) : null}</div>
 	        <div>{this.ifVasya(this.state.value)}</div>
         </div>
