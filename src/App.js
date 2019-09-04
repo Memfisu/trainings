@@ -1,13 +1,20 @@
 import React from 'react';
-import inputName from './inputName';
-import returnName from './returnName';
+import InputName from './InputName';
+import ReturnName from './ReturnName';
 
 class App extends React.Component {
+	state = {
+		value:"",
+	}
+	
+   getData = (data) => {
+	this.setState({value: data});
+}
+	
     render() {
         return <div>
-            <input type="text" onChange={inputName.handleName}/>
-	        <div>{(this.state.value.length > 1) ? (<div>Привет, {this.state.value}!</div>) : null}</div>
-	        <div>{this.ifVasya(this.state.value)}</div>
+	        <InputName get={this.getData}/>
+	        <ReturnName username={this.state.value}/>
         </div>
     }
 }

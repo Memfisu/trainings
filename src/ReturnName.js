@@ -1,11 +1,8 @@
 import React from 'react';
 
-class returnName extends React.Component {
-    state = {
-        value:"",
-    }
-
-    ifVasya = (name) => {
+class ReturnName extends React.Component {
+	
+	ifVasya = (name) => {
         let welcome = "";
         (name.length<3) ? (welcome = "") : (
             (name === "Вася") ? (welcome = "Пошёл нахуй!") : (welcome = "Добро пожаловать!"))
@@ -13,11 +10,12 @@ class returnName extends React.Component {
     }
 
     render() {
+	    const username = this.props.username;
         return <div>
-            <div>{(this.state.value.length > 1) ? (<div>Привет, {this.state.value}!</div>) : null}</div>
-            <div>{this.ifVasya(this.state.value)}</div>
+            <div>{(username.length > 1) ? (<div>Привет, {username}!</div>) : null}</div>
+            <div>{this.ifVasya(username)}</div>
         </div>
     }
 }
 
-export default returnName;
+export default ReturnName;
