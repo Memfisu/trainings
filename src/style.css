@@ -1,0 +1,11 @@
+.input-task {
+    padding: 10px;
+    margin: 40px;
+    background-color: azure;
+    border: 2px solid;
+    border-color: cornflowerblue;
+}
+
+.input-task:focus {
+    outline-color: darkblue;
+}

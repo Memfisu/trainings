@@ -1,20 +1,18 @@
 import React from 'react';
-import InputName from './InputName';
-import ReturnName from './ReturnName';
+import './style.css';
 
 class App extends React.Component {
 	state = {
 		value:"",
 	}
 	
-   getData = (data) => {
-	this.setState({value: data});
-}
+	handleName = (event) => {
+		this.setState({value: event.target.value});
+	}
 	
     render() {
         return <div>
-	        <InputName get={this.getData}/>
-	        <ReturnName username={this.state.value}/>
+	        <input type="text" placeholder="у сука" className="input-task" onChange={this.handleName}/>
         </div>
     }
 }
