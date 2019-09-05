@@ -1,11 +1,57 @@
-.input-task {
+.container {
     padding: 10px;
-    margin: 40px;
+    margin: 20px;
+    border: 2px solid;
+    border-color: darkblue;
+    box-sizing: border-box;
+}
+
+.list-general {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.add-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    width: 95%;
+}
+
+.input-list-item {
+    padding: 10px;
+    margin-left: 20px;
     background-color: azure;
     border: 2px solid;
     border-color: cornflowerblue;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
 
-.input-task:focus {
+.input-list-item:focus {
     outline-color: darkblue;
 }
+
+.button {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.add-info-button {
+    margin-left: 20px;
+}
+
+.list-item {
+    margin-bottom: 0px;
+}
+
+/* при переполнении текст выходит за границы блоков
+нужно добавить кнопки удаления
+ */

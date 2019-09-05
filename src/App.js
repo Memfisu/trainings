@@ -11,8 +11,17 @@ class App extends React.Component {
 	}
 	
     render() {
-        return <div>
-	        <input type="text" placeholder="у сука" className="input-task" onChange={this.handleName}/>
+        return <div className="list-general container">
+	        <div className="add-info">
+			<input type="text" className="input-list-item" onChange={this.handleName}/>
+			<button className="add-info-button button">V</button>
+			</div>
+			<div className="list-item container">Поиграть в приставку</div>
+            <div className="list-item container">Помыть пол</div>
+            <div className="list-item container">Сходить в магазин</div>
+            <div className="list-item container">Почесать котэ</div>
+            <div className="list-item container">Убрать говно</div>
+            <div className="list-item container">Пнуть пса</div>
         </div>
     }
 }
