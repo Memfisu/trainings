@@ -16,6 +16,20 @@
     padding-bottom: 20px;
 }
 
+.item-container {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    justify-content: space-between;
+}
+
+.text-container {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
 .add-info {
     display: flex;
     justify-content: space-between;
@@ -51,7 +65,6 @@
 }
 
 .del-info-button {
-   float: right;
     padding-left: 5px;
     padding-right: 5px;
 }

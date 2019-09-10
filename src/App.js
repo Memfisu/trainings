@@ -17,12 +17,12 @@ class App extends React.Component {
             <div className="add-info">
 			<GetItem get={this.getData}/> <SaveItem />
 			</div>
-			<div className="list-item container">Поиграть в приставку <button className="del-info-button button">X</button></div>
-            <div className="list-item container">Помыть пол <button className="del-info-button button">X</button></div>
-            <div className="list-item container">Сходить в магазин <button className="del-info-button button">X</button></div>
-            <div className="list-item container">Почесать котэ <button className="del-info-button button">X</button></div>
-            <div className="list-item container">Убрать говно <button className="del-info-button button">X</button></div>
-            <div className="list-item container">Пнуть пса <button className="del-info-button button">X</button></div>
+            <div className="list-item container"><div className="item-container container"><div className="text-container container">Поиграть в приставку</div><button className="del-info-button button">X</button></div></div>
+            <div className="list-item container"><div className="item-container container"><div className="text-container container">Помыть пол</div><button className="del-info-button button">X</button></div></div>
+            <div className="list-item container"><div className="item-container container"><div className="text-container container">Сходить в магазин</div><button className="del-info-button button">X</button></div></div>
+            <div className="list-item container"><div className="item-container container"><div className="text-container container">Почесать котэ</div><button className="del-info-button button">X</button></div></div>
+            <div className="list-item container"><div className="item-container container"><div className="text-container container">Убрать говно</div><button className="del-info-button button">X</button></div></div>
+            <div className="list-item container"><div className="item-container container"><div className="text-container container">Пнуть пса</div><button className="del-info-button button">X</button></div></div>
         </div>
     }
 }
