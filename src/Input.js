@@ -1,7 +1,6 @@
 import React from 'react';
-import './style.css';
 
-class GetItem extends React.Component {
+class Input extends React.Component {
     // state = {
     //     value:"",
     // }
@@ -16,4 +15,4 @@ class GetItem extends React.Component {
     }
 }
 
-export default GetItem;
+export default Input;
