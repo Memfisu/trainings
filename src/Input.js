@@ -1,16 +1,13 @@
 import React from 'react';
 
 class Input extends React.Component {
-    state = {
-        value:"",
-    }
 
 	handleName = (event) => {
-		this.setState({value: event.target.value});
+		this.props.callback(event.target.value); //берёт то, что введено в инпут, и записывает в пропс callback
 	}
 
     render() {
-        return <input type="text" className="input-list-item" />
+        return <input type="text" className="input-list-item" onChange={this.handleName}/> //вызывается при каждом изменении инпута, т.е. callback обновляется при каждом изменении инпута
     }
 }
 

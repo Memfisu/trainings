@@ -4,18 +4,10 @@ import Form from './Form';
 import List from './List';
 
 class App extends React.Component {
-	state = {
-		value:"",
-	}
-
-    getData = (value) => {
-        // this.setState({value: value});
-        console.log(value);
-    }
 
     render() {
         return <div className="list-general">
-            <Form getData={this.getData}/>
+            <Form />
             <List />
         </div>
     }
