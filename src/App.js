@@ -4,10 +4,18 @@ import Form from './Form';
 import List from './List';
 
 class App extends React.Component {
-
+	state = {
+		value:"",
+	}
+	
+    setData = () => {
+		// this.setState({value: value});
+		console.log(this.state.value); //выводит значение стейта value компонента Form в консоль
+	}
+	
     render() {
         return <div className="list-general">
-            <Form />
+            <Form handlerButton={this.setData} />
             <List />
         </div>
     }
