@@ -2,14 +2,16 @@ import React from 'react';
 import ListItem from './ListItem';
 
 class List extends React.Component {
-
+	
+	
     render() {
-        return <div>
-            <ListItem title={'Поиграть в приставку'}/>
-            <ListItem title={'Помыть пол'}/>
-            <ListItem title={'Сходить в магазин'}/>
-            <ListItem title={'Убрать говно'}/>
-            <ListItem title={'Пнуть пса'}/>
+        const titles = this.props.titles;
+	    return <div>
+		    {
+			    titles.map(title => {
+				    return <ListItem title={title}/>
+			    })
+		    }
         </div>
     }
 
