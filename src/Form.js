@@ -16,7 +16,7 @@ class Form extends React.Component {
 	    const data = this.state.value;
 	    handlerButton(data);
     }
-    
+
     render() {
         return <div className="add-info">
             <Input callback = {this.getData}/>

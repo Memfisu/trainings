@@ -5,12 +5,14 @@ import List from './List';
 
 class App extends React.Component {
 	state = {
-		value:"",
+		value: [],
 	}
 	
     setData = (value) => {
-		// this.setState({value: value});
-		console.log(value);
+		//this.setState({value: value});
+		//this.setState({value: this.state.value.push(value)});
+		this.state.value.push(value);
+		console.log(this.state.value);
 	}
 	
     render() {
