@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec48f34-ae7a-4c78-a910-80c08c1f2940" name="Default" comment="шахматы">
-      <change afterPath="$PROJECT_DIR$/chess/Bishop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/Board.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/Figure.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/Horse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/King.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/Pawn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/Queen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess/Rook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/List.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -234,7 +225,7 @@
       <workItem from="1568546372605" duration="16828000" />
       <workItem from="1568617095191" duration="5774000" />
       <workItem from="1568707704384" duration="12269000" />
-      <workItem from="1569849802260" duration="7168000" />
+      <workItem from="1569849802260" duration="7665000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1567335675519</created>
@@ -250,26 +241,33 @@
       <option name="project" value="LOCAL" />
       <updated>1567338629761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="шахматы">
+      <created>1569933731826</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569933731826</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75695000" />
+    <option name="totallyTimeSpent" value="76192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1916" y="-4" width="1688" height="1058" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49593496" visible="true" weight="0.19590114" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49630722" visible="true" weight="0.19590114" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50105375" side_tool="true" weight="0.27351353" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="1" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.3293348" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.499375" weight="0.37252474" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49894625" weight="0.261723" />
-      <window_info id="Favorites" order="2" sideWeight="0.50406504" side_tool="true" visible="true" weight="0.19590114" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49894625" visible="true" weight="0.261723" />
+      <window_info id="Favorites" order="2" sideWeight="0.50369275" side_tool="true" visible="true" weight="0.19590114" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
