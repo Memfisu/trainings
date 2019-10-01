@@ -17,3 +17,5 @@ class Pawn extends Figure {
 		//превратить пешку в другую фигуру, если она достигла конца доски
 	}
 }
+
+export default Pawn;

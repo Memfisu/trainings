@@ -1,11 +1,36 @@
 import Board from "./Board.js";
 
-class Figure extends Board {
-	constructor () {
-		super();
-		this.position = [][]; //позиция фигуры - цифры + буквы из координат конструктора Board
-		this.captured = false; //жива ли фигура
+class Figure {
+	constructor (color, position, captured) {
+        this._color = color; //цвет клетки
+		this._position = position; //позиция фигуры - цифры + буквы из координат конструктора Board
+		this._captured = captured; //жива ли фигура
 	}
+
+	get color () {
+		//достать из конструктора свойство _color
+	}
+
+	set color (color) {
+		//установить указанный в параметре цвет color для свойства _color
+	}
+
+    get position () {
+        //достать из конструктора свойство _position
+    }
+
+    set position (position) {
+        //установить указанные в параметре координаты position для свойства _position
+    }
+
+    get captured () {
+        //достать из конструктора свойство _captured
+    }
+
+    set captured (captured) {
+        //установить указанный в параметре статус captured для свойства _captured
+    }
+
 	moveVertical () {
 		//передвинуть фигуру вверх или вниз на одну клетку
 	}
@@ -21,8 +46,7 @@ class Figure extends Board {
 	capture () {
 		//взять фигуру
 	}
-	
-	//куда-то нужны наверное шах и мат?
+
 }
 
 export default Figure;

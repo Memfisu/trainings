@@ -17,3 +17,5 @@ class Rook extends Figure {
 		//рокировка
 	}
 }
+
+export default Rook;

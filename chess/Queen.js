@@ -18,3 +18,5 @@ class Queen extends Figure {
 	}
 	
 }
+
+export default Queen;

@@ -9,3 +9,5 @@ class Bishop extends Figure {
 		//переопределить родительский метод для слона - можно ходить на любое заданное число клеток
 	}
 }
+
+export default Bishop;
