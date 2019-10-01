@@ -1,8 +1,8 @@
 import Figure from "./Figure.js";
 
 class Pawn extends Figure {
-	constructor () {
-		super();
+	constructor (color, position, captured) {
+		super(color, position, captured);
 	}
 	
 	moveFirstMove () {

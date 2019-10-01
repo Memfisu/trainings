@@ -16,6 +16,8 @@ class Board {
 	start () {
 		// расставить фигуры для начала игры
         let pawn = new Pawn("white", ['1', 'b'], false); // пример создания пешки
+        Figure.someStatic(); // пример вызова статического метода
+        pawn.moveFirstMove(); // пример вызова обычного метода
     }
 	
 	end () {

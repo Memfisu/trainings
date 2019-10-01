@@ -31,7 +31,11 @@ class Figure {
         //установить указанный в параметре статус captured для свойства _captured
     }
 
-	moveVertical () {
+    static someStatic () {
+
+	}
+
+    moveVertical () {
 		//передвинуть фигуру вверх или вниз на одну клетку
 	}
 	
