@@ -13,25 +13,26 @@
         <p class="choose">Ты ходишь крестиками, пидор</p>
 
         <div class="input-container">
-            <input>
-            <input>
-            <input>
+            <input type="text" id="input00" onclick="game.nextTurn(0,0)">
+            <input type="text" id="input01" onclick="game.nextTurn(0,1)">
+            <input type="text" id="input02" onclick="game.nextTurn(0,2)">
         </div>
 
         <div class="input-container">
-            <input>
-            <input>
-            <input>
+            <input type="text" id="input10" onclick="game.nextTurn(1,0)">
+            <input type="text" id="input11" onclick="game.nextTurn(1,1)">
+            <input type="text" id="input12" onclick="game.nextTurn(1,2)">
         </div>
 
         <div class="input-container">
-            <input>
-            <input>
-            <input>
+            <input type="text" id="input20" onclick="game.nextTurn(2,0)">
+            <input type="text" id="input21" onclick="game.nextTurn(2,1)">
+            <input type="text" id="input22" onclick="game.nextTurn(2,2)">
         </div>
 
-        <p class="end-game">Ты выиграл, пидор!</p>
-        <p class="end-game">Ты проиграл, пидор!</p>
+        <p class="end-game win">Ты выиграл, пидор!</p>
+        <p class="end-game loose">Ты проиграл, пидор!</p>
+        <p class="end-game draw">Ничья, пидор!</p>
 
         <div class="button-container">
             <button>New game, pidor</button>
