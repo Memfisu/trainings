@@ -35,6 +35,9 @@ class TicTacToe {
     getFieldValue(rowIndex, colIndex) { //matrix[row][col] либо null
 
     }
+
+    // старт игры - инициализировать матрицу 3х3 и привязать координатык инпутам
+    //новая игра - всё очистить
 }
 
 export default TicTacToe;
