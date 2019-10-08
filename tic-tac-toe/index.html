@@ -13,29 +13,29 @@
         <p class="choose">Ты ходишь крестиками, пидор</p>
 
         <div class="input-container">
-            <input type="text" id="input00" onclick="game.nextTurn(0,0)">
-            <input type="text" id="input01" onclick="game.nextTurn(0,1)">
-            <input type="text" id="input02" onclick="game.nextTurn(0,2)">
+            <input type="text" id="input00" onclick="game.gamerTurn(0,0)">
+            <input type="text" id="input01" onclick="game.gamerTurn(0,1)">
+            <input type="text" id="input02" onclick="game.gamerTurn(0,2)">
         </div>
 
         <div class="input-container">
-            <input type="text" id="input10" onclick="game.nextTurn(1,0)">
-            <input type="text" id="input11" onclick="game.nextTurn(1,1)">
-            <input type="text" id="input12" onclick="game.nextTurn(1,2)">
+            <input type="text" id="input10" onclick="game.gamerTurn(1,0)">
+            <input type="text" id="input11" onclick="game.gamerTurn(1,1)">
+            <input type="text" id="input12" onclick="game.gamerTurn(1,2)">
         </div>
 
         <div class="input-container">
-            <input type="text" id="input20" onclick="game.nextTurn(2,0)">
-            <input type="text" id="input21" onclick="game.nextTurn(2,1)">
-            <input type="text" id="input22" onclick="game.nextTurn(2,2)">
+            <input type="text" id="input20" onclick="game.gamerTurn(2,0)">
+            <input type="text" id="input21" onclick="game.gamerTurn(2,1)">
+            <input type="text" id="input22" onclick="game.gamerTurn(2,2)">
         </div>
 
-        <p class="end-game win">Ты выиграл, пидор!</p>
-        <p class="end-game loose">Ты проиграл, пидор!</p>
-        <p class="end-game draw">Ничья, пидор!</p>
+        <p class="end-game" id="win">Ты выиграл, пидор!</p>
+        <p class="end-game" id="loose">Ты проиграл, пидор!</p>
+        <p class="end-game" id="draw">Ничья, пидор!</p>
 
         <div class="button-container">
-            <button>New game, pidor</button>
+            <button onclick="game.restart()">New game, pidor</button>
         </div>
     </div>
 
