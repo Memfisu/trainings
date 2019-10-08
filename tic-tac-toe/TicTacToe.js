@@ -1,8 +1,8 @@
 class TicTacToe {
     constructor() {
         this.matrix = [
-            [null, null, null]
-            [null, null, null]
+            [null, null, null],
+            [null, null, null],
             [null, null, null]
         ];
     }
@@ -41,9 +41,31 @@ class TicTacToe {
         }
     }
 
-    isFinished() { //если игра окончена, возвращает true 
-        //если по вертикали, горизонтали или диагонали заполнено одинаковыми символами
-        if (this.isDraw()) return true;// либо isDraw() === true, либо кто-то выиграл
+    isFinished() { //если игра окончена, возвращает победителя
+        let count_o = 0;
+        let count_x = 0;
+        for (let i=0; i<this.matrix.length; i++){  //если по диагонали-1 заполнено одинаковыми символами
+            for (let j=0; j<this.matrix.length; j++) {
+                if ((i=j)&&(matrix[i][j] = "o")) {count_o++;}
+                else if ((i=j)&&(matrix[i][j] = "x")) {count_x++;}
+            }
+        }
+        if (count_o===3) return "o";
+        else if (count_x===3) return "x";
+
+        count_o = 0;
+        count_x = 0;
+
+        for (let i=0; i<this.matrix.length; i++){  //если по диагонали-2 заполнено одинаковыми символами
+            for (let j=2; j>=0; j--) {
+                if (matrix[i][j] = "o") {count_o++;}
+                else if (matrix[i][j] = "x") {count_x++;}
+            }
+        }
+        if (count_o===3) return "o";
+        else (count_x===3) return "x";
+
+        if (this.isDraw()) return "-"; // если ничья
         return false;
     }
 
