@@ -17,13 +17,11 @@ class TicTacToe {
         if (this.matrix[rowIndex][columnIndex] != null) return; // проверить, нет ли чего по данным координатам
         else {
             this.matrix[rowIndex][columnIndex] = "x"; // если нет, запомнить крестик в координаты 
-            console.log("gamerTurn изменил матрицу");
-            console.log(this.matrix);
             input.value = "x"; // и отобразить крестик в инпуте
             input.disabled = true; // и заблокировать поле
         }
-        //if (!this.isFinished()) { this.computerTurn(); } // проверить, не закончилась ли игра и вызвать computerTurn (), если нет
-        this.computerTurn();
+        if (!this.isFinished()) { this.computerTurn(); } // проверить, не закончилась ли игра и вызвать computerTurn (), если нет
+        this.isFinished();
     }
 
     computerTurn() { // ход компьютера - поставить нолик на оставшееся свободное место, запомнить координаты
@@ -34,13 +32,10 @@ class TicTacToe {
                     let input = this.getInput(i, j);
                     input.value = "o"; // отобразить нолик в инпуте
                     input.disabled = true; // заблокировать тот инпут, куда поставили нолик
-                    console.log("computerTurn изменил матрицу");
-                    console.log(this.matrix);
-                    return;
+                    return; 
                 }
             }
         }
-        this.isFinished();
     }
 
     isFinished() { //если игра окончена, возвращает победителя
@@ -97,10 +92,10 @@ class TicTacToe {
                 let point = line[j];
                 let x = point[0];
                 let y = point[1];
-                if (this.matrix[x][y] = "o") { 
+                if (this.matrix[x][y] =="o") { 
                     count_o++; 
                 } 
-                else if (this.matrix[x][y] = "x") { 
+                else if (this.matrix[x][y] == "x") { 
                     count_x++; 
                 }
             }
@@ -115,12 +110,12 @@ class TicTacToe {
             }
         }
 
-        if (this.isDraw()) {
+        if (this.noMoreTurns()) {
             document.getElementById("draw").classList.remove("end-game"); // если ничья
             winner = "-";
             return winner;
         }
-
+        
         return false; // игра не окончена
     }
 
@@ -146,11 +141,6 @@ class TicTacToe {
             }
         }
         return result;
-    }
-
-    isDraw() { // true, если поле заполнено, а победителя нет
-        if (this.noMoreTurns() && (this.isFinished() === "-")) return true;
-        else return false;
     }
 
     restart() { //новая игра - по клику на кнопку очистить матрицу + p.classList.toggle("end-game");
