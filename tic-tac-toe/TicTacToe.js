@@ -38,7 +38,7 @@ class TicTacToe {
         }
     }
 
-    isFinished() { //если игра окончена, возвращает победителя
+    isFinished() { //если игра окончена, возвращает победителя или ничью
         let array = [
             [
                 [0, 0],
@@ -119,20 +119,6 @@ class TicTacToe {
         return false; // игра не окончена
     }
 
-    // getWinner() { 
-    //     if (this.isFinished()==="x") { // если игра окончена и победили крестики
-    //         document.getElementById("win").classList.remove("end-game"); // отобразить надпись о выигрыше (т.е. убрать скрытие надписи)
-    //     }
-
-    //     if (this.isFinished()==="o") { // если игра окончена и победили нолики
-    //         document.getElementById("loose").classList.remove("end-game"); // отобразить надпись о проигрыше (т.е. убрать скрытие надписи)
-    //     }
-
-    //     if (this.isFinished()==="-") { // если игра окончена и ничья
-    //         document.getElementById("draw").classList.remove("end-game"); // отобразить надпись о ничьей (т.е. убрать скрытие надписи)
-    //     }
-    // }
-
     noMoreTurns() { // true, если всё поле уже заполнено
         let result = true;
         for (let i = 0; i < this.matrix.length; i++) {
@@ -143,7 +129,7 @@ class TicTacToe {
         return result;
     }
 
-    restart() { //новая игра - по клику на кнопку очистить матрицу + p.classList.toggle("end-game");
+    restart() { //новая игра - по клику на кнопку очистить матрицу, очистить и разблокировать инпуты + сбросить надписи
         let isFinished = this.isFinished();
 
         if (isFinished === "x") {
