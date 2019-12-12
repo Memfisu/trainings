@@ -6,20 +6,35 @@ import List from './List';
 class App extends React.Component {
 	state = {
 		value: [],
-	}
+	};
 	
     setData = (value) => {
-		//this.setState({value: value});
-		//this.setState({value: this.state.value.push(value)});
-		this.state.value.push(value);
-		console.log(this.state.value);
-	}
+	    const newVal =[...this.state.value, value];
+		this.setState({value: newVal});
+	};
+	
+	getData = () => {
+		return this.state.value || [];
+	};
+	
+	deleteItem = (array, index) => {
+		const result = [...array];
+		result.splice(index, 1);
+		return result;
+	};
+	
+	onDelete = (index) => {
+		const newVal =[...this.state.value];
+		const result = this.deleteItem(newVal, index);
+		this.setState({value: result});
+	};
 	
     render() {
-	    const titles = ["Поиграть в приставку", "Помыть пол", "Сходить в магазин", "Убрать говно", "Пнуть пса"];
+	    const titles = this.getData();
+	    
         return <div className="list-general">
 	        <Form handlerButton={this.setData} />
-            <List titles={titles} />
+            <List titles={titles} listHandler={this.onDelete} />
         </div>
     }
 }

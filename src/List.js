@@ -5,11 +5,11 @@ class List extends React.Component {
 	
 	
     render() {
-        const titles = this.props.titles;
+        const { titles, listHandler } = this.props;
 	    return <div>
 		    {
-			    titles.map(title => {
-				    return <ListItem title={title}/>
+			    titles.map((title, key) => {
+				    return <ListItem title={title} key={key} listHandler={listHandler} index={key} />
 			    })
 		    }
         </div>
